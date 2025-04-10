@@ -1,0 +1,159 @@
+
+.section__container1 {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__subheader1 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+  }
+  
+  .section__header1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.75rem;
+    color: var(--text-dark);
+    text-align: center;
+  }
+  
+
+  .service__grid1 {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .service__card1 {
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    transition: 0.3s;
+  }
+  
+  .service__card1:hover {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service__card1 img {
+    margin-bottom: 2rem;
+    max-width: 60px;
+    margin-inline: auto;
+  }
+  
+  .service__card1 h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .service__card1 p {
+    color: var(--text-light);
+  }
+  
+  .trip__container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+  }
+  
+  .trip__image img {
+    max-width: 425px;
+    margin-inline: auto;
+  }
+  
+  .trip__list {
+    list-style: none;
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .trip__list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .trip__list li span {
+    padding: 8px 15px;
+    font-size: 1.75rem;
+    color: var(--white);
+    border-radius: 1rem;
+  }
+  
+  .trip__list li:nth-child(1) span {
+    background-color: #f0bb1f;
+  }
+  
+  .trip__list li:nth-child(2) span {
+    background-color: #f15a2b;
+  }
+  
+  .trip__list li:nth-child(3) span {
+    background-color: #006380;
+  }
+  
+  .trip__list h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .trip__list p {
+    color: var(--text-light);
+  }
+  
+  
+  
+  @media (width > 540px) {
+    .service__grid1 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  
+  }
+  
+  @media (width > 768px) {
+    
+  
+    .service__grid1 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .destination__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .trip__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  
+    .trip__image {
+      grid-area: 1/2/2/3;
+    }
+  
+    .trip__content :is(.section__subheader, .section__header) {
+      text-align: left;
+    }
+  
+    
+  }
+  
+  @media (width > 1024px) {
+    .service__grid {
+      gap: 2rem;
+    }
+  
+    .service__card {
+      padding: 2rem;
+    }
+  
+  }
+  
